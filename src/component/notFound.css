@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+}
+
+.nf-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nf-box {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nf-text {
+    width: 320px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nf-text div {
+    padding: 10px;
+}
+
+.nf-text div h1 {
+    font-size: 30px;
+}
+
+.nf-text div p {
+    font-size: 15px;
+}
+
+.line {
+    border-right: 1px solid black
+}
