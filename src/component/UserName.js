@@ -8,7 +8,7 @@ import { FaUser } from 'react-icons/fa';
 
 class UserName extends React.Component {
   state = {
-    testcomponent: false,
+    testcomponent: true,
     input: '',
     error: ''
   }

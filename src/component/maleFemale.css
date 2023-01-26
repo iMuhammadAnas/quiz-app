@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mf-main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid green; */
+    padding: 10px;
+}
+
+.mf-box {
+    /* border: 1px solid red; */
+    width: 330px;
+    min-height: 58vh;
+}
+
+.mf-box h1 {
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Fredoka', sans-serif;
+    margin-bottom: 25px;
+    line-height: 150%;
+}
+
+.user-name {
+    font-weight: 700;
+    font-family: 'Fredoka', sans-serif;
+    color: #2fbabe;
+}
+
+.male-female {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.male,.female {
+    text-align: center;
+    cursor: pointer;
+}
+
+.m-image {
+    width: 130px;
+    height: 130px;
+    border: 8px solid #4f3cdb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.f-image {
+    width: 130px;
+    height: 130px;
+    border: 8px solid #ff48c5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.female h1,.male h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    font-family: 'Fredoka', sans-serif;
+}
