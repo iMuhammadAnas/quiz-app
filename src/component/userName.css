@@ -11,12 +11,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* border: 1px solid green; */
+    padding: 10px;
 }
 
 .un-box {
-    border: 1px solid red;
-    width: 70%;
-    min-height: 60vh;
+    /* border: 1px solid red; */
+    width: 430px;
+    min-height: 62vh;
 }
 
 .un-box h1 {
@@ -24,7 +26,7 @@
     font-weight: 500;
     font-family: 'Fredoka', sans-serif;
     line-height: 45px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .un-box h1 span {
@@ -35,4 +37,71 @@
 
 .un-img {
     width: 90px;
+    margin-bottom: 10px;
+}
+
+.input-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.un-icon {
+    position: fixed;
+    width: 430px;
+    padding: 15px;
+    display: flex;
+    font-size: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: -1;
+}
+
+.er {
+    color: #fff;
+    background-color: #ff514e;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-weight: 400;
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+.un-input {
+    width: 100%;
+    font-family: 'Fredoka', sans-serif;
+    border-radius: 1.5rem;
+    margin: 15px 0px;
+    padding: 12px 45px;
+    font-size: 20px;
+    font-weight: 500;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.count {
+    position: fixed;
+    width: 430px;
+    padding: 15px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 450px){
+    .un-icon {
+        width: 95%;
+    }
+
+    .count {
+        width: 95%;
+    }
 }
