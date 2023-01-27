@@ -8,7 +8,7 @@ import { FaUser } from 'react-icons/fa';
 
 class UserName extends React.Component {
   state = {
-    testcomponent: true,
+    testcomponent: false,
     input: '',
     error: ''
   }
@@ -19,8 +19,8 @@ class UserName extends React.Component {
         return;
       };
       
-      const letters = /^[A-Za-z]+$/;
-      if (!e.target.value.match(letters) && this.state.input.length > 1) {
+      const letters = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+      if (e.target.value.match(letters) && this.state.input.length > 1) {
 
         this.setState({ error: 'Symbols are not allowed' })
         console.log(e.target.value)
@@ -35,15 +35,25 @@ class UserName extends React.Component {
         this.setState({ error: 'Your name is required' })
       }
     }
+    const redirect = (e)=>{
+      e.preventDefault();
+      if(this.state.input ===''){
+        this.setState({ error: 'Your name is required' })
+        return
+      }else{
+
+        this.setState({testcomponent: true})
+      }
+      }
 
     return (
       <div>
-        {this.state.testcomponent ? <MaleFemale /> : <div className='un-main'>
+        {this.state.testcomponent ? <MaleFemale name={this.state.input} /> : <div className='un-main'>
           <div className='un-box'>
             <h1>What is your <br /><span className='sp-1'>Name </span></h1>
             <img src='https://cdn-icons-png.flaticon.com/512/3094/3094866.png' alt='logo' className='un-img' />
             <div className='inputsec'>
-              <span className='er'>{this.state.error}</span> <br />
+              {this.state.error&& <span className='er'>{this.state.error}</span> }<br />
               <div className='input-main'>
                 <div className='un-icon'>
                   <FaUser />
@@ -53,7 +63,7 @@ class UserName extends React.Component {
               </div>
 
             </div>
-            <Link to='/' className='btn'>create quiz</Link>
+            <Link onClick={redirect} className='btn'>create quiz</Link>
           </div>
         </div>}
       </div>

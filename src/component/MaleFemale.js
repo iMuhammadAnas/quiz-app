@@ -2,11 +2,11 @@ import React from 'react';
 import './maleFemale.css';
 
 
-const MaleFemale = () => {
+const MaleFemale = (props) => {
   return (
     <div className='mf-main'>
       <div className='mf-box'>
-        <h1>who are you <br /> <span className='user-name'> Anas</span></h1>
+        <h1>who are you <br /> <span className='user-name'>{props.name}</span></h1>
         <div className='male-female'>
           <div className='male'>
             <div className='m-image'>
