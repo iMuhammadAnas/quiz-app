@@ -20,7 +20,7 @@ class UserName extends React.Component {
       };
       
       const letters = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
-      if (e.target.value.match(letters) && this.state.input.length > 1) {
+      if (e.target.value.match(letters) && this.state.input.length > -1) {
 
         this.setState({ error: 'Symbols are not allowed' })
         console.log(e.target.value)
