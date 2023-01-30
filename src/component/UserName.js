@@ -19,7 +19,7 @@ class UserName extends React.Component {
         return;
       };
       
-      const letters = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
+      const letters = /[!@#$~£“”'""‘’'`%^&*()_+\-=\[\]{};':"\\|,.<>\/?]/;
       if (e.target.value.match(letters) && this.state.input.length > -1) {
 
         this.setState({ error: 'Symbols are not allowed' })
