@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import { FaUser } from 'react-icons/fa';
 
 
-
 class UserName extends React.Component {
+  
   state = {
     testcomponent: false,
     input: '',
@@ -41,7 +41,6 @@ class UserName extends React.Component {
         this.setState({ error: 'Your name is required' })
         return
       }else{
-
         this.setState({testcomponent: true})
       }
       }

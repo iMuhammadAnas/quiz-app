@@ -3,6 +3,7 @@ import Home from './component/Home';
 import UserName from './component/UserName';
 import NotFound from './component/NotFound';
 import './App.css';
+import Creating from './component/Creating';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path='/' exact={true} element={<Home/>} />
           <Route path='*' exact={true}  element={<NotFound/>} />
           <Route path='/user-name' exact={true}  element={<UserName/>} />
+          <Route path='/creating' exact={true}  element={<Creating/>} />
         </Routes>
       </Router>
     </>
